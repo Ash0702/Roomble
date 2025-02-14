@@ -58,7 +58,13 @@ router.post(`/Tenant_register`,async (req, res) => {
                 name : name, 
                 email : email,
                 password : hashedPassword,
-                OTP : generated_OTP
+                OTP : generated_OTP,
+                locality : locality,
+                religion : religion,
+                alcohol : alcohol,
+                pets : pets,
+                veg : veg,
+                gender : gender
             })
 
             //Creating a Landlord OTP type schema and saving it
@@ -140,7 +146,7 @@ router.post(`/verifyTenant/:id`, async (req, res) => {
 
 
 
-router.post(`/Tenant_Login`, async (req, res) => {
+router.post(`/Tenant_login`, async (req, res) => {
     try {
         const { email, password } = req.body;
         let enteredPassword = password;
