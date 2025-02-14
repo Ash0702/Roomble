@@ -24,5 +24,5 @@ const TenantSchema_OTP = new mongoose.Schema({
 
 });
 
-module.exports ={LandlordSchema_OTP: mongoose.model("LandLord_OTP", LandlordSchema_OTP), 
-                 TenantScheman_OTP: mongoose.model("Tenant_OTP", TenantSchema_OTP)};
+module.exports ={Landlord_OTP: mongoose.model("LandLord_OTP", LandlordSchema_OTP), 
+                 Tenant_OTP: mongoose.model("Tenant_OTP", TenantSchema_OTP)};
