@@ -1,6 +1,6 @@
 const express = require(`express`)
 const Landlord = require(`../models/Landlord_models`)
-const Landlord_OTP = require(`../models/OTP_models`)
+const {Landlord_OTP, Tenant_OTP} = require(`../models/OTP_models`)
 const router = express.Router();
 const bcrypt = require(`bcrypt`)
 const Sendmail = require(`../helper_funcs/mailSender`)
