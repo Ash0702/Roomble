@@ -22,7 +22,7 @@ const TenantSchema_OTP = new mongoose.Schema({
     pets: {type: Boolean, required: true},
     createdat : {type : Date, default : Date.now, expires : 300}
 
-})
+});
 
 module.exports ={LandlordSchema_OTP: mongoose.model("LandLord_OTP", LandlordSchema_OTP), 
                  TenantScheman_OTP: mongoose.model("Tenant_OTP", TenantSchema_OTP};
