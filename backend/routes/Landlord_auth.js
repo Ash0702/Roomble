@@ -46,6 +46,7 @@ router.post(`/Landlord_register`,async (req, res) => {
                 res.json({
                     message : "New OTP sent"
                 })
+                return;
             }
 
             let hashedPassword = await Hashpassword(password);
